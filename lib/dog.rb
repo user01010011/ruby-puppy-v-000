@@ -7,13 +7,13 @@ attr_accessor :name
     @@all = [ ]
     @@all << self.new
   end
-  
-  def self.print_call 
+
+  def self.print_call
     @@all.each do 
       puts name
     end
   end
-  
+
   def self.all
     @@all
   end
