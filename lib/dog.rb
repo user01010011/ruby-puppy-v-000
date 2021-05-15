@@ -18,7 +18,7 @@ attr_accessor :name
   end
 
   def self.print_call
-    @@all.each do
+    @@all.each do |self|
       puts name
     end
   end
