@@ -12,8 +12,8 @@ attr_accessor :name
     @@all
   end
 
-  def self.print_call
-    puts  @all.collect { |dog| dog.name }
+  def self.print_all
+    puts  @all.collect { |self| self.name }
   end
 
   def self.clear_all
