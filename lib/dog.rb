@@ -20,5 +20,4 @@ attr_accessor :name
     @@all.Array.clear
   end
 
-
 end
