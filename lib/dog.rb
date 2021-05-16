@@ -13,7 +13,7 @@ attr_accessor :name
   end
 
   def self.print_call
-      puts @all.collect { |dog| self.name }
+      @all.collect { |dog| self.name }
   end
 
   def self.clear_all
