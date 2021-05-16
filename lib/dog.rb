@@ -1,7 +1,7 @@
 class Dog
+attr_accessor :name
 
 @@all = [ ]
-attr_accessor :name
 
   def initialize(name)
     @name = name
@@ -12,15 +12,14 @@ attr_accessor :name
     @@all
   end
 
+  def self.print_call
+      puts @all.collect {|dog|name}
+  end
+
   def self.clear_all
     @@all = [ ]
     puts "#{Array.clear}"
   end
 
-  def self.print_call
-    @@all.each do |self|
-      puts name
-    end
-  end
 
 end
